@@ -1,9 +1,10 @@
-replicaCount: 1
-image:
-  repository: baloiseincubator/menu-service
-  tag: latest
-network:
-  http:
-    servicePort: 8080
-    ingress:
-      host: menu-service.cloud.baloise.dev
+menu-service:
+  replicaCount: 1
+  image:
+    repository: baloiseincubator/menu-service
+    tag: latest
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: menu-service.cloud.baloise.dev
