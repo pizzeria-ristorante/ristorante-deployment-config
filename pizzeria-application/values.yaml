@@ -2,7 +2,7 @@ pizzeria-application:
   replicaCount: 1
   image:
     repository: baloiseincubator/pizzeria-application
-    tag: latest
+    tag: 1a6ac8bd9a2242b7bb069eccd666f203f5780bdc
   network:
     http:
       servicePort: 8080
