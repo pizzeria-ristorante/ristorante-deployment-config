@@ -1,0 +1,9 @@
+replicaCount: 1
+image:
+  repository: baloiseincubator/pizzeria-application
+  tag: latest
+network:
+  http:
+    servicePort: 8080
+    ingress:
+      host: pizzeria-application.cloud.baloise.dev
