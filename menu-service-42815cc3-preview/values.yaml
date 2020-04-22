@@ -1,0 +1,10 @@
+menu-service:
+  replicaCount: 1
+  image:
+    repository: baloiseincubator/menu-service
+    tag: latest
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: menu-service-previewplaceholder.apps.okd.baloise.dev
