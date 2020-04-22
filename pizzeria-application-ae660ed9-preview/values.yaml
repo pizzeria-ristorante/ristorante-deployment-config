@@ -1,0 +1,15 @@
+pizzeria-application:
+  replicaCount: 1
+  image:
+    repository: baloiseincubator/pizzeria-application
+    tag: latest
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: pizzeria-application-previewplaceholder.apps.okd.baloise.dev
+  env:
+    - name: menu-service.url
+      value: http://menu-service.menu-service:8080
+    - name: stock-service.url
+      value: http://stock-service.stock-service:8080
