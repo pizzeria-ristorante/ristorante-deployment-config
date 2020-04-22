@@ -2,7 +2,7 @@ menu-service:
   replicaCount: 1
   image:
     repository: baloiseincubator/menu-service
-    tag: 4b93ebad99b5a1733e112b00b6e732eeeb38ff92
+    tag: eb025f6e2b3ae35de3fa66f402faea1f51803155
   network:
     http:
       servicePort: 8080
