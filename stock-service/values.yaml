@@ -8,3 +8,4 @@ stock-service:
       servicePort: 8080
       ingress:
         host: stock-service.cloud.baloise.dev
+  labels:
