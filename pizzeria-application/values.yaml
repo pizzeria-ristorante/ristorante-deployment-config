@@ -13,3 +13,7 @@ pizzeria-application:
       value: http://menu-service.menu-service:8080
     - name: stock-service.url
       value: http://stock-service.stock-service:8080
+  annotations:
+    sidecar.istio.io/inject: "true"
+  labels:
+    maistra.io/expose-route: 'true'
