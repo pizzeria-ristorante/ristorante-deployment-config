@@ -2,9 +2,14 @@ pizzeria-application:
   replicaCount: 1
   image:
     repository: baloiseincubator/pizzeria-application
-    tag: 1a6ac8bd9a2242b7bb069eccd666f203f5780bdc
+    tag: 5ec41d14424cf26556c3f2b3e736e992a91f4ad2
   network:
     http:
       servicePort: 8080
       ingress:
         host: pizzeria-application.cloud.baloise.dev
+  env:
+    - name: menu-service.url
+      value: menu-service.cloud.baloise.dev
+    - name: stock-service.url
+      value: stock-service.cloud.baloise.dev
