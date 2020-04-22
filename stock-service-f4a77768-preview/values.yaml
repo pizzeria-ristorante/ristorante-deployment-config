@@ -1,0 +1,10 @@
+stock-service:
+  replicaCount: 1
+  image:
+    repository: baloiseincubator/stock-service
+    tag: 067279ca7e7647183d49826c3949b4b786338fdb
+  network:
+    http:
+      servicePort: 8080
+      ingress:
+        host: stock-service-f4a77768.apps.okd.baloise.dev
