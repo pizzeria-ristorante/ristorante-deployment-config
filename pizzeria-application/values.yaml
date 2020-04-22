@@ -10,6 +10,6 @@ pizzeria-application:
         host: pizzeria-application.cloud.baloise.dev
   env:
     - name: menu-service.url
-      value: menu-service.cloud.baloise.dev
+      value: menu-service.menu-service:8080
     - name: stock-service.url
-      value: stock-service.cloud.baloise.dev
+      value: stock-service.stock-service:8080
