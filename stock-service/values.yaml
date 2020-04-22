@@ -2,7 +2,7 @@ stock-service:
   replicaCount: 1
   image:
     repository: baloiseincubator/stock-service
-    tag: 9428a0a786bfb991308c8ac5548f54307c4e4428
+    tag: 1207302864d90c988ce4f3b109cb2c73baed514f
   network:
     http:
       servicePort: 8080
