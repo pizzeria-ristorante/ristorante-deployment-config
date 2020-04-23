@@ -8,7 +8,3 @@ stock-service:
       servicePort: 8080
       ingress:
         host: stock-service.cloud.baloise.dev
-  annotations:
-    sidecar.istio.io/inject: "true"
-  labels:
-    maistra.io/expose-route: 'true'
