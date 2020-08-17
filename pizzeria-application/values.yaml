@@ -16,5 +16,5 @@ pizzeria-application:
   annotations:
     sidecar.istio.io/inject: "true"
   resources:
-    requests:
+    limits:
       memory: 64Mi
