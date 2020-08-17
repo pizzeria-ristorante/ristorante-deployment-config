@@ -15,3 +15,6 @@ pizzeria-application:
       value: http://stock-service.stock-service:8080
   annotations:
     sidecar.istio.io/inject: "true"
+  resources:
+    requests:
+      memory: 64Mi
